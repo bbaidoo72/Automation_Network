@@ -22,3 +22,11 @@ telnet.write(b"hostname CoreSW  \n")
 telnet.write(b"end  \n")
 telnet.write(b"exit  \n")
 print(telnet.read_all().decode("ascii"))
+
+#device list file
+cisco_ios = {'device_type':'cisco_ios_ssh', 'ip': '10.10.10.27', 'username': 'admin', 'password': 'passwd', 'port': 22,}
+cisco_xr ={'device_type': 'cisco_xr_ssh', 'ip': '10.10.10.27', 'username': 'admin', 'pasword': 'passwd', 'secret': '', 'port': 9722,}
+arista_veos = {'device_type':'arista_eos_ssh', 'username': 'admin', 'password':'passwd', 'secret': '', 'port': 8622,}
+
+
+
